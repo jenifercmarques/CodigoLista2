@@ -1,0 +1,148 @@
+/* Estilo geral da página */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9; /* Cor de fundo suave */
+    color: #333; /* Cor do texto */
+    line-height: 1.6;
+    
+}
+
+/* Estilo para os títulos */
+h1, h2, h3 {
+    font-family: 'Georgia', serif; /* Fonte estilizada para títulos */
+    color: #a21ba9; /* Cor mais escura para destaque */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+nav ul li {
+    display: inline; /* Itens lado a lado */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #000; /* Cor do texto do menu */
+    font-weight: bold; /* Negrito para destaque */
+}
+
+#integrantes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; /* Alinha os itens em linha */
+    gap: 20px; /* Espaçamento entre os itens */
+    flex-wrap: wrap; /* Permite quebra de linha */
+    margin: 20px 0; /* Margem superior e inferior */
+    padding: 20px;
+}
+
+.nome, .avatar, .funcao, .interesses, .redes-sociais {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    background: #ffffff; /* Fundo branco para contraste*/
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.interesses {
+    width: 30%; /* Largura fixa para os interesses */
+}
+
+/* Estilo para o avatar */
+.avatar {
+    width: 150px; /* Tamanho fixo */
+    height: 150px;
+    object-fit: cover; /* Ajusta a imagem ao tamanho */
+    display: block;
+    margin: 20px auto; /* Centraliza o avatar */
+}
+
+.redes {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 15px; /* Espaçamento entre os ícones */
+    margin-top: 20px;
+}
+
+.redes a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #ac34db; /* Cor dos ícones */
+    font-size: 24px; /* Tamanho dos ícones */
+    transition: color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+
+table {
+    width: 70%; /* Largura da tabela reduzida */
+    margin: 20px auto; /* Centraliza a tabela */
+    border-collapse: collapse; /* Remove os espaços entre as bordas */
+    background-color: #ffffff; /* Fundo branco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+table th, table td {
+    border: 1px solid #ddd; /* Borda fina */
+    padding: 10px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+table th {
+    background-color: #ac34db; /* Fundo do cabeçalho */
+    color: #fff; /* Cor do texto do cabeçalho */
+    font-weight: bold; /* Negrito no cabeçalho */
+}
+
+#sobre {
+    width: 60%; /* Largura reduzida */
+    margin: 20px auto; /* Centraliza horizontalmente e adiciona margem vertical */
+    padding: 20px;
+    background-color: #ffffff; /* Fundo branco */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center; /* Centraliza o texto */
+}
+
+footer {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: #360053; /* Cor de fundo do footer */
+    color: #fff; /* Cor do texto */
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px; /* Adiciona espaço acima do footer */
+}
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: justify; /* Alinha o texto para melhor leitura */
+}
+
+/* Adiciona espaçamento entre as seções referenciadas pelos IDs */
+#integrantes, #tarefas, #sobre {
+    margin-top: 100px; /* Espaçamento superior */
+    padding-top: 20px; /* Espaçamento interno para evitar sobreposição com o cabeçalho fixo */
+    scroll-margin-top: 50vh; /* Define uma margem superior para centralizar a seção */
+    border: 2px solid #ddd; /* Borda leve com cor cinza clara */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
+}
